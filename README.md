@@ -5,7 +5,11 @@
 A prebaked image with the win32 seqcli tool for shipping logs to a SEQ server.
 
 ```
-docker run -it seqcli 
+docker run -it --rm seqcli 
+
+or 
+
+docker run --entrypoint "/bin/bash" -it --rm seqcli
 ```
 
 ## Configure Seqcli
